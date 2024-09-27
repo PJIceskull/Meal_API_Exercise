@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal API Practice</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Meals to Go</h1>
+      <div class="buttonBar">
+        <!-- This is the random button -->
+        <button id="random">Get Random Recipe</button>
+        <button id="categories">Random categories</button>
+        <!-- This is a category filter -->
+        <div class="filter">
+          <label for="cars">Choose a Category:</label>
+          <select name="category" id="cats">
+            <option value="">Select a Category</option>
+          </select>
+          <input type="submit" value="Search" id="search" />
+        </div>
+      </div>
+      <hr />
+      <div class="recipeHolder"></div>
+    </div>
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script type="module" src="model/model.js"></script>
+    <script type="module" src="app/app.js"></script>
+  </body>
+</html>

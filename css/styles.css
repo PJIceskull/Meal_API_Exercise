@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+#app {
+  padding: 15px;
+}
+
+button {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  background-color: lightgreen;
+}
+button:hover {
+  background-color: lime;
+}
+button:active {
+  background-color: green;
+  border: 2px solid #fff;
+  /* border: none; */
+}
+.buttonBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+hr {
+  border: 1px solid #000;
+  margin-bottom: 25px;
+}
+
+.recipeHolder {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.recipeCard {
+  border: 3px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 15px;
+  cursor: pointer;
+}
+.recipeCard h1 {
+  font-size: 21px;
+  max-width: 225px;
+  /* background-color: red; */
+  height: 60px;
+  margin-bottom: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.recipeCard img {
+  height: 250px;
+  width: 250px;
+}
